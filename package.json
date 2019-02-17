@@ -1,0 +1,54 @@
+{
+  "name": "inferno-parcel-routing-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "build": "parcel build index.html",
+    "test": "npm run-script lint && jest src",
+    "lint": "eslint --fix ."
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.2",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "autoprefixer": "^9.2.1",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-eslint": "^10.0.1",
+    "babel-jest": "^24.1.0",
+    "babel-plugin-inferno": "^6.0.0",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "eslint": "^5.5.0",
+    "eslint-config-eslint": "^5.0.1",
+    "eslint-config-prettier": "^4.0.0",
+    "eslint-plugin-babel": "^5.2.0",
+    "eslint-plugin-prettier": "^3.0.0",
+    "eslint-plugin-react": "^7.11.1",
+    "husky": "^1.1.2",
+    "inferno": "^7.1.7",
+    "inferno-test-utils": "^7.1.7",
+    "jest": "^24.1.0",
+    "lint-staged": "^8.1.4",
+    "node-sass": "^4.9.3",
+    "npm-check-updates": "^2.15.0",
+    "parcel-bundler": "^1.9.7",
+    "prettier": "^1.14.2",
+    "prettier-eslint": "^8.8.2",
+    "typescript": "^3.3.3"
+  },
+  "lint-staged": {
+    "*.{js,json,css,md}": [
+      "prettier --write",
+      "git add"
+    ]
+  },
+  "prettier": {
+    "printWidth": 120
+  },
+  "dependencies": {
+    "inferno-router": "^7.1.7"
+  }
+}
